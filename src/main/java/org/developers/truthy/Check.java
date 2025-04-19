@@ -21,11 +21,19 @@ public abstract class Check {
         return !isNull(file);
     }
 
-    public static boolean isEmpty(Collection<?> list) {
-        return list == null || list.isEmpty();
+    public static boolean isEmpty(Collection<?> collection) {
+        return collection == null || collection.isEmpty();
     }
 
-    public static boolean isNotEmpty(Collection<?> list) {
-        return !isEmpty(list);
+    public static boolean isNotEmpty(Collection<?> collection) {
+        return !isEmpty(collection);
+    }
+
+    public static boolean isEmpty(Object[] array) {
+        return array == null || array.length == 0;
+    }
+
+    public static boolean isNotEmpty(Object[] array) {
+        return !isEmpty(array);
     }
 }
