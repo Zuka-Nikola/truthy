@@ -6,7 +6,7 @@
 
     <groupId>org.developers</groupId>
     <artifactId>truthy</artifactId>
-    <version>0.1.0</version>
+    <version>1.0.0</version>
     <name>truthy</name>
 
     <properties>
@@ -14,7 +14,7 @@
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
     </properties>
-    
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
