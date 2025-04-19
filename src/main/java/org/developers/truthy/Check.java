@@ -2,7 +2,7 @@ package org.developers.truthy;
 
 import org.springframework.web.multipart.MultipartFile;
 
-import java.util.List;
+import java.util.Collection;
 
 public abstract class Check {
     public static boolean isNull(Object object) {
@@ -21,11 +21,19 @@ public abstract class Check {
         return !isNull(file);
     }
 
-    public static boolean isEmpty(List<Object> list) {
-        return list == null || list.isEmpty();
+    public static boolean isEmpty(Collection<?> collection) {
+        return collection == null || collection.isEmpty();
     }
 
-    public static boolean isNotEmpty(List<Object> list) {
-        return !isEmpty(list);
+    public static boolean isNotEmpty(Collection<?> collection) {
+        return !isEmpty(collection);
+    }
+
+    public static boolean isEmpty(Object[] array) {
+        return array == null || array.length == 0;
+    }
+
+    public static boolean isNotEmpty(Object[] array) {
+        return !isEmpty(array);
     }
 }
