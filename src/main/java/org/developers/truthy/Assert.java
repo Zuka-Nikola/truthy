@@ -1,13 +1,13 @@
 package org.developers.truthy;
 
 public abstract class Assert {
-    public static void assertTrue(boolean expression, String code) {
+    public static void assertThat(boolean expression, String code) {
         if (!expression) {
             throw new ApplicationException(code);
         }
     }
 
-    public static void assertTrue(boolean expression, String code, Object... args) {
+    public static void assertThat(boolean expression, String code, Object... args) {
         if (!expression) {
             throw new ApplicationException(code, args);
         }
